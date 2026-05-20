@@ -1,0 +1,2 @@
+class Vertice:
+    pass

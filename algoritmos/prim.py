@@ -1,0 +1,2 @@
+def prim(grafo):
+    pass

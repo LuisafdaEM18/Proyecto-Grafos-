@@ -20,8 +20,6 @@ CRITERIOS_UNIDAD = {
 
 
 class ResultadoDijkstra:
-    """Encapsula el resultado de ejecutar Dijkstra."""
-
     def __init__(self, origen: str, destino: str, criterio: str):
         self.origen = origen
         self.destino = destino
@@ -144,16 +142,6 @@ def dijkstra(grafo: Grafo, origen: str, destino: str, criterio: str) -> Resultad
 
 
 def explicar_resultado(grafo: Grafo, resultado: ResultadoDijkstra) -> str:
-    """
-    Genera una explicación en lenguaje natural de por qué se seleccionó la ruta.
-
-    Args:
-        grafo:     Grafo del campus
-        resultado: Resultado del algoritmo Dijkstra
-
-    Returns:
-        Texto explicativo para mostrar al usuario
-    """
     if not resultado.encontrada:
         return (
             f"No se encontró una ruta entre '{resultado.origen}' y '{resultado.destino}' "

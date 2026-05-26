@@ -13,7 +13,7 @@ def construir_campus() -> Grafo:
         B3  - Bloque 3 (Humanidades)
         B4  - Bloque 4 (Ingeniería)
         LIB - Biblioteca Central
-        KIO - Kiosko
+        CAF - Kiosko
         LAB - Laboratorios 
         TEA - Teatro Universitario
         ENF - Enfermería
@@ -36,7 +36,7 @@ def construir_campus() -> Grafo:
         Vertice("B3",   "Bloque 3 - Humanidades",         "bloque_academico",  "Ciencias sociales y arte"),
         Vertice("B4",   "Bloque 4 - Ingeniería",          "bloque_academico",  "Aulas generales y coordinaciones"),
         Vertice("LIB",  "Biblioteca Central",              "biblioteca",        "Colección física y digital"),
-        Vertice("KIO",  "Kiosko",                          "kiosko",            "Servicio de snacks y bebidas"),
+        Vertice("CAF",  "Kiosko",                          "kiosko",            "Servicio de snacks y bebidas"),
         Vertice("LAB",  "Laboratorios",                    "laboratorio",       "40 equipos disponibles"),
         Vertice("TEA",  "Teatro Universitario",            "teatro",            "Aforo para 300 personas"),
         Vertice("ENF",  "Enfermería",                      "salud",             "Atención médica básica"),
@@ -66,7 +66,7 @@ def construir_campus() -> Grafo:
         Arista("B1",   "LAB",   60, 1.0, 3, True,  "disponible"),   # alta congestión (muy transitado)
         Arista("B2",   "LIB",  110, 2.0, 2, True,  "disponible"),
         Arista("B2",   "B3",   130, 2.0, 1, True,  "disponible"),
-        Arista("B3",   "KIO",   70, 1.0, 3, True,  "disponible"),
+        Arista("B3",   "CAF",   70, 1.0, 3, True,  "disponible"),
         Arista("B3",   "TEA",  200, 3.5, 1, False, "mantenimiento"), # en mantenimiento
         Arista("B4",   "B1",   140, 2.0, 2, True,  "disponible"),
         Arista("B4",   "CAF",  100, 1.5, 3, True,  "disponible"),
